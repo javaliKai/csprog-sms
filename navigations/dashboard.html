@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/2857afecf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">SMS<span class="institute">.NUIST</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Lessons</a></li>
+            <li><a href="#">Material</a></li>
+            <li><a href="#">Homework</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Todo List</a></li>
+            <li><a href="#">Semester Progress</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="dashboard-content">
+        <h2>Dashboard</h2>
+        <div class="layout">
+          <section class="left">
+            <div class="lessons-brief">
+              <div class="brief-header">
+                <h3>Today's Lesson</h3>
+                <p>Tuesday</p>
+              </div>
+              <div class="lessons">
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>CSPROG</strong></p>
+                    <p class="teacher-name">WANG Haibin</p>
+                  </span>
+                  <p>20C-1</p>
+                  <p>16.45</p>
+                </div>
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>OS</strong></p>
+                    <p class="teacher-name">ZHAO Yingnan</p>
+                  </span>
+                  <p>20D-2</p>
+                  <p>18.45</p>
+                </div>
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>PROBSTAT</strong></p>
+                    <p class="teacher-name">ZHAO Kai</p>
+                  </span>
+                  <p>20P-2</p>
+                  <p>19.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="materials-brief">
+              <div class="brief-header">
+                <h3>Materials</h3>
+                <p>see more...</p>
+              </div>
+              <div class="materials">
+                <div class="material-card card">
+                  <i class="fas fa-desktop"></i>
+                  <p class="material-title">CSPROG</p>
+                </div>
+                <div class="material-card card">
+                  <i class="fas fa-cogs"></i>
+                  <p class="material-title">OS</p>
+                </div>
+                <div class="material-card card">
+                  <i class="fas fa-divide"></i>
+                  <p class="material-title">PROBSTAT</p>
+                </div>
+                <div class="material-card card">
+                  <i class="fas fa-paint-brush"></i>
+                  <p class="material-title">GUIDEV</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="center">
+            <div class="todo-brief">
+              <div class="brief-header">
+                <h3>Todo List</h3>
+                <p>see more...</p>
+              </div>
+              <div class="todo-input">
+                <form>
+                  <input type="text" placeholder="enter todo..." />
+                  <button class="add-todo-btn">
+                    <i class="far fa-plus-square"></i>
+                  </button>
+                </form>
+              </div>
+              <ul class="todos">
+                <li class="todo">
+                  <span class="todo-left">
+                    <p>Take notes</p>
+                  </span>
+                  <span class="todo-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </li>
+                <li class="todo">
+                  <span class="todo-left">
+                    <p>Review notes</p>
+                  </span>
+                  <span class="todo-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </li>
+                <li class="todo">
+                  <span class="todo-left">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sint eveniet perspiciatis quod voluptatibus tenetur
+                      suscipit blanditiis cum tempora sunt iusto.
+                    </p>
+                  </span>
+                  <span class="todo-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="right">
+            <div class="semester-brief">
+              <div class="brief-header">
+                <h3>Semester Progress</h3>
+                <p>See more...</p>
+              </div>
+              <div class="progress">
+                <div class="progress-week card">
+                  <i class="far fa-calendar-alt"></i>
+                  <p>
+                    Current Semester Week: <strong>17<sup>th</sup></strong>
+                  </p>
+                </div>
+                <div class="progress-exam card">
+                  <i class="fas fa-book-open"></i>
+                  <p>Semester Exam in: <br /><strong>9 Day(s)</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="brief-header">
+              <h3>Homework</h3>
+              <p>See more...</p>
+            </div>
+            <div class="homeworks">
+              <div class="homework card">
+                <h4>CSPROG</h4>
+                <p>Due: 20<sup>th</sup> June 2022</p>
+              </div>
+              <div class="homework card">
+                <h4>PROBSTAT</h4>
+                <p>Due: 20<sup>th</sup> June 2022</p>
+              </div>
+              <div class="homework card">
+                <h4>OS</h4>
+                <p>Due: 20<sup>th</sup> June 2022</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+.dashboard-content {
+  padding: 45px 30px;
+  width: 100%;
+}
+
+.dashboard-content .layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.dashboard-content .layout .left,
+.dashboard-content .layout .right,
+.dashboard-content .layout .center {
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  padding: 5px 10px;
+}
+
+.dashboard-content .layout .left {
+  width: 50%;
+}
+
+.dashboard-content .layout .right,
+.dashboard-content .layout .center {
+  width: 25%;
+}
+
+.dashboard-content h3 {
+  font-size: 1rem;
+}
+
+.dashboard-content p {
+  font-size: 0.85rem;
+}
+
+.dashboard-content .brief-header p {
+  color: var(--gray);
+}
+
+.left,
+.center,
+.right {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.left .lessons-brief,
+.right .semester-brief {
+  min-height: 45vh;
+}
+
+.left .lessons-brief .lessons {
+  margin-top: 7px;
+  margin-bottom: 25px;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .lessons-brief .lesson-card {
+  width: 100%;
+  background-color: var(--white);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.left .lessons-brief .lesson-card:hover {
+  transform: scale(1.05);
+}
+
+.left .lessons-brief .lesson-card .class-title {
+  min-width: 10vw;
+}
+
+.left .lessons-brief .lesson-card .teacher-name {
+  color: var(--gray);
+}
+
+.left .materials-brief .brief-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.left .materials-brief .materials {
+  min-height: 55vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left .materials-brief .material-card {
+  min-width: 9rem;
+  padding: 15px;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--paleBlue);
+  border-radius: 10px;
+}
+
+.left .materials-brief .material-card i {
+  font-size: 5rem;
+  color: var(--violet);
+}
+
+.left .materials-brief .material-card .material-title {
+  color: var(--violet);
+}
+
+.left .materials-brief .material-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+
+  /* TODO: USE JS TO CHANGE BG AND COLOR TO THE CHILD ELEMENT */
+}
+
+.center {
+  background-color: var(--paleBlue);
+}
+
+.center .todo-input {
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.center .todos {
+  list-style: none;
+}
+
+.center .todo-input form {
+  display: flex;
+}
+
+.center .todo-input input {
+  width: 100%;
+  padding: 3px 5px;
+  border: 1px solid var(--gray);
+}
+
+.center .todo-input input:focus {
+  /* outline-color: var(--violet); */
+  outline: none;
+  border: 1px solid var(--violet);
+}
+
+.center .add-todo-btn {
+  border: none;
+  padding: 3px 5px;
+  background-color: var(--violet);
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--hoverTransition);
+}
+
+.center .add-todo-btn:hover {
+  background-color: white;
+  color: var(--violet);
+}
+
+.center .add-todo-btn i {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.center .todos .todo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--white);
+  margin-bottom: 10px;
+}
+
+.center .todos .todo .todo-left,
+.center .todos .todo .todo-right {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.center .todos .todo .todo-right {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: all 0.8s;
+  border: 1px solid transparent;
+}
+
+.center .todos .todo .todo-right:hover {
+  color: green;
+  border: 1px solid green;
+  /* border-right: 1px solid green; */
+  background-color: white;
+}
+
+.right .semester-brief .progress {
+  min-height: 40vh;
+}
+
+.right .semester-brief .progress .progress-week,
+.right .semester-brief .progress .progress-exam {
+  /* TODO: when hovered, change bg to violet and text to white */
+  padding: 10px 10px;
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.right .semester-brief .progress .progress-week i,
+.right .semester-brief .progress .progress-exam i {
+  font-size: 1.8rem;
+  color: var(--violet);
+}
+
+.right .homeworks {
+  margin-top: 7px;
+  min-height: 60vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.right .homeworks .homework {
+  padding: 10px 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.right .homework-card h4 {
+  font-size: 0.85rem;
+}

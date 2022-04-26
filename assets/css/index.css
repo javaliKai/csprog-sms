@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+/* Reset Default Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* Global Vars */
+:root {
+  --black: #000;
+  --violet: #6159e6;
+  --gray: #b4b4ce;
+  --paleBlue: rgba(238, 243, 255, 1);
+  --lightBackground: rgb(248, 250, 255);
+  --white: rgb(255, 255, 255);
+  --hoverTransition: all 0.8s ease;
+}
+
+/* Scrollbar custom style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--lightBackground);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(136, 136, 155);
+}
+
+.circle-1 {
+  width: 10%;
+  height: auto;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container {
+  min-width: 90%;
+  min-height: 100vh;
+  background-color: var(--lightBackground);
+  display: flex;
+}
+
+.container header {
+  /* background-color: var(--paleBlue); */
+  background-image: linear-gradient(
+    rgba(229, 235, 255, 1),
+    rgba(191, 193, 252, 0.5)
+  );
+  padding: 46px 40px;
+  font-size: 0.85rem;
+}
+
+.container header .title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container header .institute {
+  color: var(--violet);
+}
+
+.container header nav {
+  margin-top: 90px;
+  width: inherit;
+}
+
+.container header nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.container header nav ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container header nav ul li a {
+  color: var(--gray);
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.container header nav ul li a:hover {
+  color: var(--violet);
+  font-weight: bold;
+}
+
+.container header nav ul li a.active {
+  color: var(--violet);
+  font-weight: bold;
+}
+
+/* TODO: make this to appear at the very left side with JS */
+header nav ul li a.active::before {
+  content: '_';
+  min-width: 10px;
+  height: auto;
+  background-color: var(--violet);
+  position: relative;
+  left: 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
