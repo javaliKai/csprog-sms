@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/lessons.css" />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/2857afecf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">SMS<span class="institute">.NUIST</span></h1>
+        <nav>
+          <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./lessons.html" class="active">Lessons</a></li>
+            <li><a href="#">Material</a></li>
+            <li><a href="#">Homework</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Todo List</a></li>
+            <li><a href="#">Semester Progress</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="lessons-content">
+        <h2>Lessons</h2>
+        <div class="layout">
+          <div class="lessons-pagination">
+            <span class="nav">
+              <div class="nav__left"><i class="fas fa-angle-left"></i></div>
+              <div class="nav__right"><i class="fas fa-angle-right"></i>x</div>
+              <div class="nav__page">
+                <!-- Below are the circle page indicator -->
+                <span class="active-page"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </span>
+          </div>
+          <div class="lessons-list">
+            <div class="todays-lesson">
+              <h3>Today's Lessons</h3>
+              <div class="lessons">
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>CSPROG</strong></p>
+                    <p class="teacher-name">WANG Haibin</p>
+                  </span>
+                  <p>20C-1</p>
+                  <p>16.45</p>
+                </div>
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>OS</strong></p>
+                    <p class="teacher-name">ZHAO Yingnan</p>
+                  </span>
+                  <p>20D-2</p>
+                  <p>18.45</p>
+                </div>
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>PROBSTAT</strong></p>
+                    <p class="teacher-name">ZHAO Kai</p>
+                  </span>
+                  <p>20P-2</p>
+                  <p>19.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="tomorrows-lesson">
+              <h3>Tomorrow's Lessons</h3>
+              <div class="lessons">
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>CSPROG</strong></p>
+                    <p class="teacher-name">WANG Haibin</p>
+                  </span>
+                  <p>20C-1</p>
+                  <p>16.45</p>
+                </div>
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>OS</strong></p>
+                    <p class="teacher-name">ZHAO Yingnan</p>
+                  </span>
+                  <p>20D-2</p>
+                  <p>18.45</p>
+                </div>
+                <div class="lesson-card card">
+                  <span class="class-title">
+                    <p><strong>PROBSTAT</strong></p>
+                    <p class="teacher-name">ZHAO Kai</p>
+                  </span>
+                  <p>20P-2</p>
+                  <p>19.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

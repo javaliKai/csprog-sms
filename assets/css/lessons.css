@@ -1,0 +1,98 @@
+.lessons-content {
+  padding: 45px 30px;
+  width: 100%;
+}
+
+.layout {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.layout .lessons-pagination {
+  max-width: 100%;
+  min-height: 50vh;
+  background-color: var(--paleBlue);
+  padding: 5px 10px;
+  position: relative;
+}
+
+.lessons-pagination .nav__left {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 46%;
+}
+
+.lessons-pagination .nav__right {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  top: 46%;
+}
+
+.lessons-pagination .nav__page {
+  position: absolute;
+  width: 75px;
+  left: 46%;
+  bottom: 0;
+  text-align: center;
+}
+
+.lessons-pagination .nav__page span {
+  display: inline-block;
+  border: 1px solid var(--gray);
+  border-radius: 100%;
+  min-width: 15px;
+  min-height: 15px;
+  cursor: pointer;
+}
+
+.lessons-pagination .nav__page span:hover,
+.lessons-pagination .nav__page span.active-page {
+  /* TODO: use JS to dynamically set the active-page class when clicked */
+  background-color: var(--gray);
+}
+
+.layout .lessons-list {
+  margin-top: 10px;
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todays-lesson,
+.tomorrows-lesson {
+  width: 45%;
+}
+
+.lessons {
+  margin-top: 7px;
+  margin-bottom: 25px;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lesson-card {
+  width: 100%;
+  background-color: var(--white);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lesson-card:hover {
+  transform: scale(1.05);
+}
+
+.lesson-card .class-title {
+  min-width: 10vw;
+}
+
+.lesson-card .teacher-name {
+  color: var(--gray);
+}
