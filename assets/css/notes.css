@@ -1,0 +1,36 @@
+.notes-menu {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-menu .menu__left button:first-child {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.notes-menu .menu__right .form-control:first-child {
+  margin-bottom: 10px;
+}
+
+.notes-collection {
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--paleBlue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notes-collection .note-card {
+  background-color: var(--white);
+  min-width: 13rem;
+  min-height: 13rem;
+  max-width: 13rem;
+  max-height: 13rem;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 0 10px 0 10px;
+}

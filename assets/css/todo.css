@@ -1,0 +1,33 @@
+.todo-container {
+  background-color: var(--paleBlue);
+  text-align: center;
+  padding: 50px;
+}
+
+.todo-header .todo-input {
+  width: 50%;
+  padding: 5px 10px;
+  border: 1px solid var(--gray);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-list .todo-card {
+  text-align: left;
+  background-color: var(--white);
+  margin-bottom: 25px;
+  padding: 5px 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-list .todo-card p {
+  vertical-align: middle;
+}

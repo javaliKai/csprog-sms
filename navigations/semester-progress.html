@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/semester-progress.css" />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/2857afecf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Material</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">SMS<span class="institute">.NUIST</span></h1>
+        <nav>
+          <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./lessons.html">Lessons</a></li>
+            <li><a href="./material.html">Material</a></li>
+            <li><a href="./homework.html">Homework</a></li>
+            <li><a href="./notes.html">Notes</a></li>
+            <li><a href="./todo.html">Todo List</a></li>
+            <li>
+              <a href="./semester-progress.html" class="active"
+                >Semester Progress</a
+              >
+            </li>
+            <li><a href="./profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <h2>Semester Progress</h2>
+        <div class="layout">
+          <div class="semester-info">
+            <p>Current Semester: 4</p>
+            <p>
+              You Have Obtained 67 <span>out of</span> 120 Credits <br />
+              Keep it Up!
+            </p>
+            <p>Next Exam: in 9 Day(s)</p>
+          </div>
+          <hr />
+          <div class="score-table">
+            <div class="table-control">
+              <form>
+                <label for="filter">Filter by Semester: </label>
+                <select name="filter" id="filter">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+              </form>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Academic Year</th>
+                  <th>Semester</th>
+                  <th>Course Name</th>
+                  <th>Overall Score</th>
+                  <th>Ranking</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2020-2021</td>
+                  <td>1</td>
+                  <td>Introduction to Java</td>
+                  <td>97</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2020-2021</td>
+                  <td>1</td>
+                  <td>Introduction to Java</td>
+                  <td>97</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2020-2021</td>
+                  <td>1</td>
+                  <td>Introduction to Java</td>
+                  <td>97</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2020-2021</td>
+                  <td>1</td>
+                  <td>Introduction to Java</td>
+                  <td>97</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2020-2021</td>
+                  <td>1</td>
+                  <td>Introduction to Java</td>
+                  <td>97</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

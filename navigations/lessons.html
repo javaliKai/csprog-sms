@@ -11,7 +11,7 @@
       src="https://kit.fontawesome.com/2857afecf8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Dashboard</title>
+    <title>Lessons</title>
   </head>
   <body>
     <div class="container">
@@ -21,22 +21,22 @@
           <ul>
             <li><a href="./dashboard.html">Dashboard</a></li>
             <li><a href="./lessons.html" class="active">Lessons</a></li>
-            <li><a href="#">Material</a></li>
-            <li><a href="#">Homework</a></li>
-            <li><a href="#">Notes</a></li>
-            <li><a href="#">Todo List</a></li>
-            <li><a href="#">Semester Progress</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="./material.html">Material</a></li>
+            <li><a href="./homework.html">Homework</a></li>
+            <li><a href="./notes.html">Notes</a></li>
+            <li><a href="./todo.html">Todo List</a></li>
+            <li><a href="./semester-progress.html">Semester Progress</a></li>
+            <li><a href="./profile.html">Profile</a></li>
           </ul>
         </nav>
       </header>
-      <main class="lessons-content">
+      <main class="content">
         <h2>Lessons</h2>
         <div class="layout">
           <div class="lessons-pagination">
             <span class="nav">
               <div class="nav__left"><i class="fas fa-angle-left"></i></div>
-              <div class="nav__right"><i class="fas fa-angle-right"></i>x</div>
+              <div class="nav__right"><i class="fas fa-angle-right"></i></div>
               <div class="nav__page">
                 <!-- Below are the circle page indicator -->
                 <span class="active-page"></span>
@@ -44,6 +44,51 @@
                 <span></span>
               </div>
             </span>
+            <div class="complete-lessons">
+              <div class="lesson-card__complete card">
+                <i class="fas fa-desktop"></i>
+                <div class="lesson-title">
+                  <h3>CSPROG</h3>
+                  <p>Client-side Programming</p>
+                </div>
+                <div class="lesson-body">
+                  <p>Teacher: WANG Haibin</p>
+                  <p>Schedule:</p>
+                  <ul>
+                    <li>Mon 16.55 - 17.25</li>
+                    <li>Tue 13.45 - 14.25</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="lesson-card__complete card">
+                <i class="fas fa-cogs"></i>
+                <div class="lesson-title">
+                  <h3>OS</h3>
+                  <p>Operating System</p>
+                </div>
+                <div class="lesson-body">
+                  <p>Teacher: ZHAO Yingnan</p>
+                  <p>Schedule:</p>
+                  <ul>
+                    <li>Tue 18.45 - 21.10</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="lesson-card__complete card">
+                <i class="fas fa-divide"></i>
+                <div class="lesson-title">
+                  <h3>PROBSTAT</h3>
+                  <p>Probability and Statistics</p>
+                </div>
+                <div class="lesson-body">
+                  <p>Teacher: ZHAO Kai</p>
+                  <p>Schedule:</p>
+                  <ul>
+                    <li>Thu 18.45 - 21.10</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="lessons-list">
             <div class="todays-lesson">

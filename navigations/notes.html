@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/2857afecf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Material</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">SMS<span class="institute">.NUIST</span></h1>
+        <nav>
+          <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./lessons.html">Lessons</a></li>
+            <li><a href="./material.html">Material</a></li>
+            <li><a href="./homework.html">Homework</a></li>
+            <li><a href="./notes.html" class="active">Notes</a></li>
+            <li><a href="./todo.html">Todo List</a></li>
+            <li><a href="./semester-progress.html">Semester Progress</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <h2>Notes</h2>
+        <div class="layout">
+          <section class="notes-menu">
+            <div class="menu__left">
+              <button>New Note</button>
+              <button>Delete Note</button>
+            </div>
+            <div class="menu__right">
+              <form>
+                <div class="form-control">
+                  <label for="filter">Filter By Class: </label>
+                  <select name="filter" id="filter">
+                    <option value="CSPROG">CSPROG</option>
+                    <option value="PROBSTAT">PROBSTAT</option>
+                    <option value="OS">OS</option>
+                    <option value="GUIDEV">GUIDEV</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label for="sort">Sort By: </label>
+                  <select name="sort" id="sort">
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Oldest">Oldest</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section class="notes-collection card">
+            <div class="note-card card">1</div>
+            <div class="note-card card">1</div>
+            <div class="note-card card">1</div>
+            <div class="note-card card">1</div>
+            <div class="note-card card">1</div>
+            <div class="note-card card">1</div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

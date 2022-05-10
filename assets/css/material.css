@@ -1,0 +1,59 @@
+.material-collection {
+  background-color: var(--paleBlue);
+  width: 100%;
+  border-radius: 10px;
+  padding: 35px 10px;
+  position: relative;
+}
+
+.material-collection .materials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 85vh;
+}
+
+.material-collection .material-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 25%;
+}
+
+.material-collection .nav__left {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 46%;
+  text-align: center;
+}
+
+.material-collection .nav__right {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  top: 46%;
+  text-align: center;
+}
+
+.material-collection .nav__page {
+  position: absolute;
+  width: 75px;
+  left: 46%;
+  bottom: 0;
+  text-align: center;
+}
+
+.material-collection .nav__page span {
+  display: inline-block;
+  border: 1px solid var(--gray);
+  border-radius: 100%;
+  min-width: 15px;
+  min-height: 15px;
+  cursor: pointer;
+}
+
+.material-collection .nav__page span:hover,
+.material-collection .nav__page span.active-page {
+  /* TODO: use JS to dynamically set the active-page class when clicked */
+  background-color: var(--gray);
+}

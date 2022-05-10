@@ -1,0 +1,45 @@
+.semester-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.semester-info p:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+}
+
+.semester-info p span {
+  font-weight: lighter;
+  color: var(--gray);
+}
+
+.table-control {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.score-table {
+  margin-top: 2rem;
+}
+
+.score-table table {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: var(--paleBlue);
+}
+
+.score-table table th {
+  font-size: 0.9rem;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.score-table table td {
+  font-size: 0.85rem;
+  border: 1px solid black;
+  padding: 5px 10px;
+}

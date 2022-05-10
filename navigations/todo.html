@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/todo.css" />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/2857afecf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">SMS<span class="institute">.NUIST</span></h1>
+        <nav>
+          <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./lessons.html">Lessons</a></li>
+            <li><a href="./material.html">Material</a></li>
+            <li><a href="./homework.html">Homework</a></li>
+            <li><a href="./notes.html">Notes</a></li>
+            <li><a href="./todo.html" class="active">Todo List</a></li>
+            <li><a href="./semester-progress.html">Semester Progress</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <h2>Todo List</h2>
+        <div class="layout">
+          <div class="todo-container">
+            <div class="todo-header">
+              <h3>Create a Task</h3>
+              <form>
+                <input
+                  class="todo-input"
+                  type="text"
+                  placeholder="enter todo..."
+                />
+                <button type="submit">+</button>
+              </form>
+            </div>
+            <div class="todo-list">
+              <div class="todo-card card">
+                <span> Take notes </span>
+                <span>
+                  <i class="fas fa-trash"></i>
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <div class="todo-card card">
+                <span> Take notes </span>
+                <span>
+                  <i class="fas fa-trash"></i>
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <div class="todo-card card">
+                <span> Take notes </span>
+                <span>
+                  <i class="fas fa-trash"></i>
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

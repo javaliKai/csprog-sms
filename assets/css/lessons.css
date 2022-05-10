@@ -1,13 +1,3 @@
-.lessons-content {
-  padding: 45px 30px;
-  width: 100%;
-}
-
-.layout {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 .layout .lessons-pagination {
   max-width: 100%;
   min-height: 50vh;
@@ -21,6 +11,7 @@
   width: 50px;
   left: 0;
   top: 46%;
+  text-align: center;
 }
 
 .lessons-pagination .nav__right {
@@ -28,6 +19,7 @@
   width: 50px;
   right: 0;
   top: 46%;
+  text-align: center;
 }
 
 .lessons-pagination .nav__page {
@@ -51,6 +43,36 @@
 .lessons-pagination .nav__page span.active-page {
   /* TODO: use JS to dynamically set the active-page class when clicked */
   background-color: var(--gray);
+}
+
+.lessons-pagination .complete-lessons {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+.lessons-pagination .lesson-card__complete {
+  width: 25%;
+  min-height: 250px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.lesson-card__complete .lesson-title p {
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.lesson-card__complete i {
+  font-size: 3rem;
+  color: var(--violet);
 }
 
 .layout .lessons-list {
