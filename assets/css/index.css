@@ -17,7 +17,8 @@ h3 {
 
 p,
 li,
-label {
+label,
+a {
   font-size: 0.85rem;
 }
 
@@ -76,13 +77,14 @@ ul {
     rgba(229, 235, 255, 1),
     rgba(191, 193, 252, 0.5)
   );
-  padding: 46px 40px;
+  /* padding: 46px 40px; */
   font-size: 0.85rem;
 }
 
 .container header .title {
   font-size: 1.5rem;
   text-align: center;
+  padding: 46px 40px;
 }
 
 .container header .institute {
@@ -97,6 +99,10 @@ ul {
 .container header nav ul {
   list-style: none;
   text-align: center;
+}
+
+.container header nav ul li {
+  position: relative;
 }
 
 .container header nav ul li:not(:last-child) {
@@ -123,12 +129,16 @@ ul {
 
 /* TODO: make this to appear at the very left side with JS */
 header nav ul li a.active::before {
-  content: '_';
-  min-width: 10px;
-  height: auto;
+  content: '|';
+  min-width: 7px;
+  height: 40px;
+  color: var(--violet);
   background-color: var(--violet);
-  position: relative;
+  position: absolute;
   left: 0;
+  top: -10px;
+  animation: open-bar 0.5s;
+  /* transform: scale(1); */
 }
 
 .card {
@@ -144,4 +154,25 @@ header nav ul li a.active::before {
 .layout {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.85);
+  /* min-width: 99.3vw;
+  height: 140vh; */
+  width: 100%;
+  height: 142.5vh;
+  z-index: 3;
+  position: absolute;
+  top: 0%;
+}
+
+@keyframes open-bar {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

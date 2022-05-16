@@ -1,11 +1,9 @@
 .dashboard-content {
   padding: 45px 30px;
-  width: 100%;
 }
 
 .dashboard-content .layout {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 10px;
 }
 
@@ -26,6 +24,11 @@
   width: 25%;
 }
 
+.dashboard-content .layout .center {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .dashboard-content h3 {
   font-size: 1rem;
 }
@@ -34,8 +37,13 @@
   font-size: 0.85rem;
 }
 
-.dashboard-content .brief-header p {
+.dashboard-content .brief-header a {
   color: var(--gray);
+  text-decoration: none;
+}
+
+.dashboard-content .brief-header a:hover {
+  text-decoration: underline;
 }
 
 .left,
@@ -236,4 +244,32 @@
 
 .right .homework-card h4 {
   font-size: 0.85rem;
+}
+
+.lesson-detail {
+  width: 400px;
+  height: 265px;
+  margin: 10% auto;
+  position: relative;
+  background-color: white;
+  color: var(--black);
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lesson-detail .title {
+  font-weight: bold;
+}
+
+.lesson-detail .lesson-information {
+  text-align: left;
+}
+
+.lesson-detail .lesson-reminder {
+  color: var(--gray);
+  font-style: italic;
 }
