@@ -40,29 +40,29 @@
                 <p>Tuesday</p>
               </div>
               <div class="lessons">
-                <div class="lesson-card card" id="lesson-card">
+                <div class="lesson-card card">
                   <span class="class-title">
-                    <p id="lesson-code"><strong>CSPROG</strong></p>
-                    <p id="teacher-name" class="teacher-name">WANG Haibin</p>
+                    <p class="lesson-code"><strong>CSPROG</strong></p>
+                    <p class="teacher-name">WANG Haibin</p>
                   </span>
-                  <p id="classroom">20C-1</p>
-                  <p id="time">16.45</p>
+                  <p class="classroom">20C-1</p>
+                  <p class="time">16.45</p>
                 </div>
-                <div class="lesson-card card" id="lesson-card">
+                <div class="lesson-card card">
                   <span class="class-title">
-                    <p id="lesson-code"><strong>OS</strong></p>
-                    <p id="teacher-name" class="teacher-name">ZHAO Yingnan</p>
+                    <p class="lesson-code"><strong>OS</strong></p>
+                    <p class="teacher-name">ZHAO Yingnan</p>
                   </span>
-                  <p id="classroom">20D-1</p>
-                  <p id="time">18.45</p>
+                  <p class="classroom">20D-1</p>
+                  <p class="time">18.45</p>
                 </div>
-                <div class="lesson-card card" id="lesson-card">
+                <div class="lesson-card card">
                   <span class="class-title">
-                    <p id="lesson-code"><strong>PROBSTAT</strong></p>
-                    <p id="teacher-name" class="teacher-name">ZHAO KAI</p>
+                    <p class="lesson-code"><strong>PROBSTAT</strong></p>
+                    <p class="teacher-name">ZHAO KAI</p>
                   </span>
-                  <p id="classroom">20P-2</p>
-                  <p id="time">19.00</p>
+                  <p class="classroom">20P-2</p>
+                  <p class="time">19.00</p>
                 </div>
               </div>
             </div>
@@ -73,19 +73,19 @@
               </div>
               <div class="materials">
                 <div class="material-card card">
-                  <i class="fas fa-desktop"></i>
+                  <i class="fas fa-desktop material-icon"></i>
                   <p class="material-title">CSPROG</p>
                 </div>
                 <div class="material-card card">
-                  <i class="fas fa-cogs"></i>
+                  <i class="fas fa-cogs material-icon"></i>
                   <p class="material-title">OS</p>
                 </div>
                 <div class="material-card card">
-                  <i class="fas fa-divide"></i>
+                  <i class="fas fa-divide material-icon"></i>
                   <p class="material-title">PROBSTAT</p>
                 </div>
                 <div class="material-card card">
-                  <i class="fas fa-paint-brush"></i>
+                  <i class="fas fa-paint-brush material-icon"></i>
                   <p class="material-title">GUIDEV</p>
                 </div>
               </div>
@@ -98,14 +98,18 @@
                 <a href="./todo.html"> see more... </a>
               </div>
               <div class="todo-input">
-                <form>
-                  <input type="text" placeholder="enter todo..." />
+                <form id="todo-form">
+                  <input
+                    id="todo-text"
+                    type="text"
+                    placeholder="enter todo..."
+                  />
                   <button class="add-todo-btn">
                     <i class="far fa-plus-square"></i>
                   </button>
                 </form>
               </div>
-              <ul class="todos">
+              <ul class="todos" id="todos">
                 <li class="todo">
                   <span class="todo-left">
                     <p>Take notes</p>

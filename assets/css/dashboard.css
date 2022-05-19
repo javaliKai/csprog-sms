@@ -242,11 +242,18 @@
   border-radius: 10px;
 }
 
+.right .homeworks .homework:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .right .homework-card h4 {
   font-size: 0.85rem;
 }
 
-.lesson-detail {
+.lesson-detail,
+.material-detail,
+.homework-detail {
   width: 400px;
   height: 265px;
   margin: 10% auto;
@@ -261,15 +268,53 @@
   justify-content: space-between;
 }
 
-.lesson-detail .title {
+.modal .title {
   font-weight: bold;
 }
 
-.lesson-detail .lesson-information {
+.lesson-detail .lesson-information,
+.homework-detail .homework-info {
   text-align: left;
 }
 
-.lesson-detail .lesson-reminder {
+.modal .reminder {
   color: var(--gray);
   font-style: italic;
+}
+
+.material-detail {
+  display: block;
+}
+
+.material-detail .chapters-card {
+  border-radius: 10px;
+}
+
+.material-detail .chapters-card {
+  margin-top: 25px;
+}
+
+.material-detail .chapters-card ul li:not(:last-child) {
+  border-bottom: 1px solid var(--gray);
+}
+
+.material-detail .chapters-card ul li {
+  padding: 5px 10px;
+  cursor: pointer; /* Delsoon, change to link instead*/
+}
+
+.homework-detail .submit-page__link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--violet);
+  padding: 5px 10px;
+  transition: var(--hoverTransition);
+  border: 1px solid var(--violet);
+}
+
+.homework-detail .submit-page__link:hover {
+  background-color: var(--white);
+  color: var(--violet);
 }

@@ -34,7 +34,7 @@ ul {
   --paleBlue: rgba(238, 243, 255, 1);
   --lightBackground: rgb(248, 250, 255);
   --white: rgb(255, 255, 255);
-  --hoverTransition: all 0.8s ease;
+  --hoverTransition: all 0.5s ease;
 }
 
 /* Scrollbar custom style */
